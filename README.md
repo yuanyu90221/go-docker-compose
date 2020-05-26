@@ -42,3 +42,5 @@ docker stop -t 30 \
 ```script===
 docker container prune -f
 ```
+## reference document
+[graceful shutdown use docker-compose with rolling update](https://blog.wu-boy.com/2020/02/graceful-shutdown-using-docker-compose-with-rolling-update/)
