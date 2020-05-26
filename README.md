@@ -44,3 +44,7 @@ docker container prune -f
 ```
 ## reference document
 [graceful shutdown use docker-compose with rolling update](https://blog.wu-boy.com/2020/02/graceful-shutdown-using-docker-compose-with-rolling-update/)
+
+## Edge Router traefik
+[traefik ](https://docs.traefik.io/getting-started/quick-start/)
+this is load balancer for docker container
