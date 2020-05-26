@@ -30,3 +30,15 @@ this would just create not existed container only
 ```script===
 docker-compose up -d --scale app=3 --no-recreate
 ```
+## kill last two container
+```script===
+docker stop -t 30 \
+>   $(docker ps --format "table {{.ID}}  {{.Names}}  {{.CreatedAt}}" | \
+>   grep app | \
+>   sort -k2 | \
+>   awk -F  "  " '{print $1}' | head -2)
+```
+## remove no used image
+```script===
+docker container prune -f
+```
